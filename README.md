@@ -1,23 +1,23 @@
 
 # Table of Contents
 
-1.  [What is this about?](#org0f73edd)
-2.  [Prerequisite](#org5d646d2)
-3.  [What are the issues?](#orga791621)
-    1.  [PEP 420 Namespace package causes pip commands to raise AttributeError](#org952fbf8)
-    2.  [PEP-420 namespace package has a <span class="underline"><span class="underline">file</span></span> attribute](#org8bf5c44)
-4.  [How to run the tests?](#org89098ae)
+1.  [What is this about?](#org697baa5)
+2.  [Prerequisite](#org2fbf35b)
+3.  [What are the issues?](#org18000ba)
+    1.  [PEP 420 Namespace package causes pip commands to raise AttributeError](#org42d8215)
+    2.  [PEP-420 namespace package has a <span class="underline"><span class="underline">file</span></span> attribute](#orga401fa7)
+4.  [How to run the tests?](#org8d6d6e8)
 
 
 
-<a id="org0f73edd"></a>
+<a id="org697baa5"></a>
 
 # What is this about?
 
 I have run into an issue installing packages with implicit namespaces. I would like to explore the issue to better understand what is going wrong. Someone has already created [pip issue 6055](https://github.com/pypa/pip/issues/6055), the only difference is that my example uses a PEP 420 implicit namespace.
 
 
-<a id="org5d646d2"></a>
+<a id="org2fbf35b"></a>
 
 # Prerequisite
 
@@ -27,15 +27,15 @@ Everything beyond this point assumes that you have cloned this repository and ch
     git clone https://github.com/BloggerBust/test_pep_420.git
     cd test_pep_420
 
-The repository includes an implicity namespace package named implicit<sub>namespace</sub><sub>foo</sub>. 
+The repository includes an implicitly namespace package named implicit<sub>namespace</sub><sub>foo</sub>. 
 
 
-<a id="orga791621"></a>
+<a id="org18000ba"></a>
 
 # What are the issues?
 
 
-<a id="org952fbf8"></a>
+<a id="org42d8215"></a>
 
 ## PEP 420 Namespace package causes pip commands to raise AttributeError
 
@@ -69,7 +69,7 @@ Here is the output for [pep517.check](pep517check.log) and [pep517.build](pep517
     pip check
 
 
-<a id="org8bf5c44"></a>
+<a id="orga401fa7"></a>
 
 ## PEP-420 namespace package has a <span class="underline"><span class="underline">file</span></span> attribute
 
@@ -82,7 +82,7 @@ I wanted to see if the namespace was being created correctly as described in [PE
 The first test fails because the namespace package has a `__file__` attribute which violates PEP420.
 
 
-<a id="org89098ae"></a>
+<a id="org8d6d6e8"></a>
 
 # How to run the tests?
 

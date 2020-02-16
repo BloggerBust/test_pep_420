@@ -14,7 +14,7 @@ Everything beyond this point assumes that you have cloned this repository and ch
   cd test_pep_420
 #+end_src
 
-The repository includes an implicity namespace package named implicit_namespace_foo. 
+The repository includes an implicitly namespace package named implicit_namespace_foo. 
 * What are the issues?
 
 ** PEP 420 Namespace package causes pip commands to raise AttributeError
