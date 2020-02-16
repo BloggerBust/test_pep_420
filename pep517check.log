@@ -1,0 +1,529 @@
+import _frozen_importlib # frozen
+import _imp # builtin
+import '_thread' # <class '_frozen_importlib.BuiltinImporter'>
+import '_warnings' # <class '_frozen_importlib.BuiltinImporter'>
+import '_weakref' # <class '_frozen_importlib.BuiltinImporter'>
+# installing zipimport hook
+import 'zipimport' # <class '_frozen_importlib.BuiltinImporter'>
+# installed zipimport hook
+import '_frozen_importlib_external' # <class '_frozen_importlib.FrozenImporter'>
+import '_io' # <class '_frozen_importlib.BuiltinImporter'>
+import 'marshal' # <class '_frozen_importlib.BuiltinImporter'>
+import 'posix' # <class '_frozen_importlib.BuiltinImporter'>
+import _thread # previously loaded ('_thread')
+import '_thread' # <class '_frozen_importlib.BuiltinImporter'>
+import _weakref # previously loaded ('_weakref')
+import '_weakref' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/__init__.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__init__.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/__init__.cpython-37.pyc'
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/codecs.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/codecs.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/codecs.cpython-37.pyc'
+import '_codecs' # <class '_frozen_importlib.BuiltinImporter'>
+import 'codecs' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381e8450>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/aliases.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/aliases.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/aliases.cpython-37.pyc'
+import 'encodings.aliases' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2382056d0>
+import 'encodings' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238263890>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/utf_8.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/utf_8.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/utf_8.cpython-37.pyc'
+import 'encodings.utf_8' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381e8410>
+import '_signal' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/latin_1.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/latin_1.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/encodings/__pycache__/latin_1.cpython-37.pyc'
+import 'encodings.latin_1' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23820ce90>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/io.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/io.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/io.cpython-37.pyc'
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/abc.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/abc.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/abc.cpython-37.pyc'
+import '_abc' # <class '_frozen_importlib.BuiltinImporter'>
+import 'abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2382108d0>
+import 'io' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238210190>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/_bootlocale.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/_bootlocale.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/_bootlocale.cpython-37.pyc'
+import '_locale' # <class '_frozen_importlib.BuiltinImporter'>
+import '_bootlocale' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238215590>
+Python 3.7.5 (default, Feb  3 2020, 18:28:31) 
+[GCC 9.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/site.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/site.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/site.cpython-37.pyc'
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/os.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/os.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/os.cpython-37.pyc'
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/stat.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/stat.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/stat.cpython-37.pyc'
+import '_stat' # <class '_frozen_importlib.BuiltinImporter'>
+import 'stat' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381b3ad0>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/posixpath.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/posixpath.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/posixpath.cpython-37.pyc'
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/genericpath.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/genericpath.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/genericpath.cpython-37.pyc'
+import 'genericpath' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381bf910>
+import 'posixpath' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381b9410>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/_collections_abc.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/_collections_abc.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/_collections_abc.cpython-37.pyc'
+import '_collections_abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381c6310>
+import 'os' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381a7ad0>
+# /usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/_sitebuiltins.cpython-37.pyc matches /usr/lib/python-exec/python3.7/../../../lib/python3.7/_sitebuiltins.py
+# code object from '/usr/lib/python-exec/python3.7/../../../lib/python3.7/__pycache__/_sitebuiltins.cpython-37.pyc'
+import '_sitebuiltins' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381a7f90>
+import 'site' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2382203d0>
+# /usr/lib/python3.7/__pycache__/runpy.cpython-37.pyc matches /usr/lib/python3.7/runpy.py
+# code object from '/usr/lib/python3.7/__pycache__/runpy.cpython-37.pyc'
+# /usr/lib/python3.7/importlib/__pycache__/__init__.cpython-37.pyc matches /usr/lib/python3.7/importlib/__init__.py
+# code object from '/usr/lib/python3.7/importlib/__pycache__/__init__.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/types.cpython-37.pyc matches /usr/lib/python3.7/types.py
+# code object from '/usr/lib/python3.7/__pycache__/types.cpython-37.pyc'
+import 'types' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23815da90>
+# /usr/lib/python3.7/__pycache__/warnings.cpython-37.pyc matches /usr/lib/python3.7/warnings.py
+# code object from '/usr/lib/python3.7/__pycache__/warnings.cpython-37.pyc'
+import 'warnings' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23815dc10>
+import 'importlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23815d490>
+# /usr/lib/python3.7/importlib/__pycache__/machinery.cpython-37.pyc matches /usr/lib/python3.7/importlib/machinery.py
+# code object from '/usr/lib/python3.7/importlib/__pycache__/machinery.cpython-37.pyc'
+import 'importlib.machinery' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23816a9d0>
+# /usr/lib/python3.7/importlib/__pycache__/util.cpython-37.pyc matches /usr/lib/python3.7/importlib/util.py
+# code object from '/usr/lib/python3.7/importlib/__pycache__/util.cpython-37.pyc'
+# /usr/lib/python3.7/importlib/__pycache__/abc.cpython-37.pyc matches /usr/lib/python3.7/importlib/abc.py
+# code object from '/usr/lib/python3.7/importlib/__pycache__/abc.cpython-37.pyc'
+import 'importlib.abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238175450>
+# /usr/lib/python3.7/__pycache__/contextlib.cpython-37.pyc matches /usr/lib/python3.7/contextlib.py
+# code object from '/usr/lib/python3.7/__pycache__/contextlib.cpython-37.pyc'
+# /usr/lib/python3.7/collections/__pycache__/__init__.cpython-37.pyc matches /usr/lib/python3.7/collections/__init__.py
+# code object from '/usr/lib/python3.7/collections/__pycache__/__init__.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/operator.cpython-37.pyc matches /usr/lib/python3.7/operator.py
+# code object from '/usr/lib/python3.7/__pycache__/operator.cpython-37.pyc'
+import '_operator' # <class '_frozen_importlib.BuiltinImporter'>
+import 'operator' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238132d90>
+# /usr/lib/python3.7/__pycache__/keyword.cpython-37.pyc matches /usr/lib/python3.7/keyword.py
+# code object from '/usr/lib/python3.7/__pycache__/keyword.cpython-37.pyc'
+import 'keyword' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238136ad0>
+# /usr/lib/python3.7/__pycache__/heapq.cpython-37.pyc matches /usr/lib/python3.7/heapq.py
+# code object from '/usr/lib/python3.7/__pycache__/heapq.cpython-37.pyc'
+# extension module '_heapq' loaded from '/usr/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_heapq' executed from '/usr/lib/python3.7/lib-dynload/_heapq.cpython-37m-x86_64-linux-gnu.so'
+import '_heapq' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb2380c9390>
+import 'heapq' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380c5510>
+import 'itertools' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.7/__pycache__/reprlib.cpython-37.pyc matches /usr/lib/python3.7/reprlib.py
+# code object from '/usr/lib/python3.7/__pycache__/reprlib.cpython-37.pyc'
+import 'reprlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380c9690>
+import '_collections' # <class '_frozen_importlib.BuiltinImporter'>
+import 'collections' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238112850>
+# /usr/lib/python3.7/__pycache__/functools.cpython-37.pyc matches /usr/lib/python3.7/functools.py
+# code object from '/usr/lib/python3.7/__pycache__/functools.cpython-37.pyc'
+import '_functools' # <class '_frozen_importlib.BuiltinImporter'>
+import 'functools' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238112f50>
+import 'contextlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238175c10>
+import 'importlib.util' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23816f4d0>
+# /usr/lib/python3.7/__pycache__/pkgutil.cpython-37.pyc matches /usr/lib/python3.7/pkgutil.py
+# code object from '/usr/lib/python3.7/__pycache__/pkgutil.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/weakref.cpython-37.pyc matches /usr/lib/python3.7/weakref.py
+# code object from '/usr/lib/python3.7/__pycache__/weakref.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/_weakrefset.cpython-37.pyc matches /usr/lib/python3.7/_weakrefset.py
+# code object from '/usr/lib/python3.7/__pycache__/_weakrefset.cpython-37.pyc'
+import '_weakrefset' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380fbe50>
+import 'weakref' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380f1250>
+import 'pkgutil' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23810b050>
+import 'runpy' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238158490>
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/__init__.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__init__.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/__init__.cpython-37.pyc'
+import 'pep517' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380fb3d0>
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/check.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/check.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/check.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/argparse.cpython-37.pyc matches /usr/lib/python3.7/argparse.py
+# code object from '/usr/lib/python3.7/__pycache__/argparse.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/re.cpython-37.pyc matches /usr/lib/python3.7/re.py
+# code object from '/usr/lib/python3.7/__pycache__/re.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/enum.cpython-37.pyc matches /usr/lib/python3.7/enum.py
+# code object from '/usr/lib/python3.7/__pycache__/enum.cpython-37.pyc'
+import 'enum' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380bb150>
+# /usr/lib/python3.7/__pycache__/sre_compile.cpython-37.pyc matches /usr/lib/python3.7/sre_compile.py
+# code object from '/usr/lib/python3.7/__pycache__/sre_compile.cpython-37.pyc'
+import '_sre' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.7/__pycache__/sre_parse.cpython-37.pyc matches /usr/lib/python3.7/sre_parse.py
+# code object from '/usr/lib/python3.7/__pycache__/sre_parse.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/sre_constants.cpython-37.pyc matches /usr/lib/python3.7/sre_constants.py
+# code object from '/usr/lib/python3.7/__pycache__/sre_constants.cpython-37.pyc'
+import 'sre_constants' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238066e90>
+import 'sre_parse' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238059f90>
+import 'sre_compile' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380492d0>
+# /usr/lib/python3.7/__pycache__/copyreg.cpython-37.pyc matches /usr/lib/python3.7/copyreg.py
+# code object from '/usr/lib/python3.7/__pycache__/copyreg.cpython-37.pyc'
+import 'copyreg' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238070e50>
+import 're' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380b5710>
+# /usr/lib/python3.7/__pycache__/gettext.cpython-37.pyc matches /usr/lib/python3.7/gettext.py
+# code object from '/usr/lib/python3.7/__pycache__/gettext.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/locale.cpython-37.pyc matches /usr/lib/python3.7/locale.py
+# code object from '/usr/lib/python3.7/__pycache__/locale.cpython-37.pyc'
+import 'locale' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb238004590>
+import 'gettext' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380b8790>
+import 'argparse' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb23808dcd0>
+# /usr/lib/python3.7/logging/__pycache__/__init__.cpython-37.pyc matches /usr/lib/python3.7/logging/__init__.py
+# code object from '/usr/lib/python3.7/logging/__pycache__/__init__.cpython-37.pyc'
+import 'time' # <class '_frozen_importlib.BuiltinImporter'>
+# /usr/lib/python3.7/__pycache__/traceback.cpython-37.pyc matches /usr/lib/python3.7/traceback.py
+# code object from '/usr/lib/python3.7/__pycache__/traceback.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/linecache.cpython-37.pyc matches /usr/lib/python3.7/linecache.py
+# code object from '/usr/lib/python3.7/__pycache__/linecache.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/tokenize.cpython-37.pyc matches /usr/lib/python3.7/tokenize.py
+# code object from '/usr/lib/python3.7/__pycache__/tokenize.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/token.cpython-37.pyc matches /usr/lib/python3.7/token.py
+# code object from '/usr/lib/python3.7/__pycache__/token.cpython-37.pyc'
+import 'token' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237fede50>
+import 'tokenize' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237fdc9d0>
+import 'linecache' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237fdc4d0>
+import 'traceback' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237fd25d0>
+# /usr/lib/python3.7/collections/__pycache__/abc.cpython-37.pyc matches /usr/lib/python3.7/collections/abc.py
+# code object from '/usr/lib/python3.7/collections/__pycache__/abc.cpython-37.pyc'
+import 'collections.abc' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237fe3910>
+# /usr/lib/python3.7/__pycache__/string.cpython-37.pyc matches /usr/lib/python3.7/string.py
+# code object from '/usr/lib/python3.7/__pycache__/string.cpython-37.pyc'
+import '_string' # <class '_frozen_importlib.BuiltinImporter'>
+import 'string' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237fdc990>
+# /usr/lib/python3.7/__pycache__/threading.cpython-37.pyc matches /usr/lib/python3.7/threading.py
+# code object from '/usr/lib/python3.7/__pycache__/threading.cpython-37.pyc'
+import 'threading' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ffc910>
+import 'atexit' # <class '_frozen_importlib.BuiltinImporter'>
+import 'logging' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2380973d0>
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/__init__.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__init__.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/__init__.cpython-37.pyc'
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/encoder.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/encoder.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/encoder.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/datetime.cpython-37.pyc matches /usr/lib/python3.7/datetime.py
+# code object from '/usr/lib/python3.7/__pycache__/datetime.cpython-37.pyc'
+# extension module 'math' loaded from '/usr/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so'
+# extension module 'math' executed from '/usr/lib/python3.7/lib-dynload/math.cpython-37m-x86_64-linux-gnu.so'
+import 'math' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237f09ed0>
+# extension module '_datetime' loaded from '/usr/lib/python3.7/lib-dynload/_datetime.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_datetime' executed from '/usr/lib/python3.7/lib-dynload/_datetime.cpython-37m-x86_64-linux-gnu.so'
+import '_datetime' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237f18350>
+import 'datetime' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f63cd0>
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/decoder.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/decoder.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/decoder.cpython-37.pyc'
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/tz.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/tz.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/toml/__pycache__/tz.cpython-37.pyc'
+import 'toml.tz' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f18e10>
+import 'toml.decoder' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f63f90>
+import 'toml.encoder' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f61590>
+import 'toml' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f4be10>
+# /usr/lib/python3.7/__pycache__/shutil.cpython-37.pyc matches /usr/lib/python3.7/shutil.py
+# code object from '/usr/lib/python3.7/__pycache__/shutil.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/fnmatch.cpython-37.pyc matches /usr/lib/python3.7/fnmatch.py
+# code object from '/usr/lib/python3.7/__pycache__/fnmatch.cpython-37.pyc'
+import 'fnmatch' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f2bfd0>
+import 'errno' # <class '_frozen_importlib.BuiltinImporter'>
+# extension module 'zlib' loaded from '/usr/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so'
+# extension module 'zlib' executed from '/usr/lib/python3.7/lib-dynload/zlib.cpython-37m-x86_64-linux-gnu.so'
+import 'zlib' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237f31a50>
+# /usr/lib/python3.7/__pycache__/bz2.cpython-37.pyc matches /usr/lib/python3.7/bz2.py
+# code object from '/usr/lib/python3.7/__pycache__/bz2.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/_compression.cpython-37.pyc matches /usr/lib/python3.7/_compression.py
+# code object from '/usr/lib/python3.7/__pycache__/_compression.cpython-37.pyc'
+import '_compression' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237eb74d0>
+# extension module '_bz2' loaded from '/usr/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_bz2' executed from '/usr/lib/python3.7/lib-dynload/_bz2.cpython-37m-x86_64-linux-gnu.so'
+import '_bz2' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237eb7f90>
+import 'bz2' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f34390>
+# /usr/lib/python3.7/__pycache__/lzma.cpython-37.pyc matches /usr/lib/python3.7/lzma.py
+# code object from '/usr/lib/python3.7/__pycache__/lzma.cpython-37.pyc'
+# extension module '_lzma' loaded from '/usr/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_lzma' executed from '/usr/lib/python3.7/lib-dynload/_lzma.cpython-37m-x86_64-linux-gnu.so'
+import '_lzma' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237efe990>
+import 'lzma' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f18050>
+import 'pwd' # <class '_frozen_importlib.BuiltinImporter'>
+# extension module 'grp' loaded from '/usr/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so'
+# extension module 'grp' executed from '/usr/lib/python3.7/lib-dynload/grp.cpython-37m-x86_64-linux-gnu.so'
+import 'grp' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237efe250>
+import 'shutil' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f611d0>
+# /usr/lib/python3.7/__pycache__/subprocess.cpython-37.pyc matches /usr/lib/python3.7/subprocess.py
+# code object from '/usr/lib/python3.7/__pycache__/subprocess.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/signal.cpython-37.pyc matches /usr/lib/python3.7/signal.py
+# code object from '/usr/lib/python3.7/__pycache__/signal.cpython-37.pyc'
+import 'signal' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ebd610>
+# extension module '_posixsubprocess' loaded from '/usr/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_posixsubprocess' executed from '/usr/lib/python3.7/lib-dynload/_posixsubprocess.cpython-37m-x86_64-linux-gnu.so'
+import '_posixsubprocess' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237ebd550>
+# extension module 'select' loaded from '/usr/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so'
+# extension module 'select' executed from '/usr/lib/python3.7/lib-dynload/select.cpython-37m-x86_64-linux-gnu.so'
+import 'select' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237ebdc90>
+# /usr/lib/python3.7/__pycache__/selectors.cpython-37.pyc matches /usr/lib/python3.7/selectors.py
+# code object from '/usr/lib/python3.7/__pycache__/selectors.cpython-37.pyc'
+import 'selectors' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ebf7d0>
+import 'subprocess' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f1f210>
+# /usr/lib/python3.7/__pycache__/tarfile.cpython-37.pyc matches /usr/lib/python3.7/tarfile.py
+# code object from '/usr/lib/python3.7/__pycache__/tarfile.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/struct.cpython-37.pyc matches /usr/lib/python3.7/struct.py
+# code object from '/usr/lib/python3.7/__pycache__/struct.cpython-37.pyc'
+# extension module '_struct' loaded from '/usr/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_struct' executed from '/usr/lib/python3.7/lib-dynload/_struct.cpython-37m-x86_64-linux-gnu.so'
+import '_struct' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237ee9dd0>
+import 'struct' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ee99d0>
+# /usr/lib/python3.7/__pycache__/copy.cpython-37.pyc matches /usr/lib/python3.7/copy.py
+# code object from '/usr/lib/python3.7/__pycache__/copy.cpython-37.pyc'
+import 'copy' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ee9f50>
+import 'tarfile' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ef9850>
+# /usr/lib/python3.7/__pycache__/tempfile.cpython-37.pyc matches /usr/lib/python3.7/tempfile.py
+# code object from '/usr/lib/python3.7/__pycache__/tempfile.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/random.cpython-37.pyc matches /usr/lib/python3.7/random.py
+# code object from '/usr/lib/python3.7/__pycache__/random.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/hashlib.cpython-37.pyc matches /usr/lib/python3.7/hashlib.py
+# code object from '/usr/lib/python3.7/__pycache__/hashlib.cpython-37.pyc'
+# extension module '_hashlib' loaded from '/usr/lib/python3.7/lib-dynload/_hashlib.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_hashlib' executed from '/usr/lib/python3.7/lib-dynload/_hashlib.cpython-37m-x86_64-linux-gnu.so'
+import '_hashlib' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237e08d10>
+# extension module '_blake2' loaded from '/usr/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_blake2' executed from '/usr/lib/python3.7/lib-dynload/_blake2.cpython-37m-x86_64-linux-gnu.so'
+import '_blake2' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237e0d990>
+# extension module '_sha3' loaded from '/usr/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_sha3' executed from '/usr/lib/python3.7/lib-dynload/_sha3.cpython-37m-x86_64-linux-gnu.so'
+import '_sha3' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237e0dbd0>
+import 'hashlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237e02bd0>
+# /usr/lib/python3.7/__pycache__/bisect.cpython-37.pyc matches /usr/lib/python3.7/bisect.py
+# code object from '/usr/lib/python3.7/__pycache__/bisect.cpython-37.pyc'
+# extension module '_bisect' loaded from '/usr/lib/python3.7/lib-dynload/_bisect.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_bisect' executed from '/usr/lib/python3.7/lib-dynload/_bisect.cpython-37m-x86_64-linux-gnu.so'
+import '_bisect' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237e08890>
+import 'bisect' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237e08650>
+# extension module '_random' loaded from '/usr/lib/python3.7/lib-dynload/_random.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_random' executed from '/usr/lib/python3.7/lib-dynload/_random.cpython-37m-x86_64-linux-gnu.so'
+import '_random' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237e08250>
+import 'random' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237dfd350>
+import 'tempfile' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237f6afd0>
+# /usr/lib/python3.7/__pycache__/zipfile.cpython-37.pyc matches /usr/lib/python3.7/zipfile.py
+# code object from '/usr/lib/python3.7/__pycache__/zipfile.cpython-37.pyc'
+# extension module 'binascii' loaded from '/usr/lib/python3.7/lib-dynload/binascii.cpython-37m-x86_64-linux-gnu.so'
+# extension module 'binascii' executed from '/usr/lib/python3.7/lib-dynload/binascii.cpython-37m-x86_64-linux-gnu.so'
+import 'binascii' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237ab1590>
+import 'zipfile' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237dfd210>
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/colorlog.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/colorlog.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/colorlog.cpython-37.pyc'
+# /usr/lib/python3.7/curses/__pycache__/__init__.cpython-37.pyc matches /usr/lib/python3.7/curses/__init__.py
+# code object from '/usr/lib/python3.7/curses/__pycache__/__init__.cpython-37.pyc'
+# extension module '_curses' loaded from '/usr/lib/python3.7/lib-dynload/_curses.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_curses' executed from '/usr/lib/python3.7/lib-dynload/_curses.cpython-37m-x86_64-linux-gnu.so'
+import '_curses' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237ab6f90>
+import 'curses' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ab6990>
+import 'pep517.colorlog' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ab60d0>
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/envbuild.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/envbuild.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/envbuild.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/sysconfig.cpython-37.pyc matches /usr/lib/python3.7/sysconfig.py
+# code object from '/usr/lib/python3.7/__pycache__/sysconfig.cpython-37.pyc'
+import 'sysconfig' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ac7c90>
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/wrappers.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/wrappers.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/wrappers.cpython-37.pyc'
+# /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/compat.cpython-37.pyc matches /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/compat.py
+# code object from '/home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/pep517/__pycache__/compat.cpython-37.pyc'
+# /usr/lib/python3.7/json/__pycache__/__init__.cpython-37.pyc matches /usr/lib/python3.7/json/__init__.py
+# code object from '/usr/lib/python3.7/json/__pycache__/__init__.cpython-37.pyc'
+# /usr/lib/python3.7/json/__pycache__/decoder.cpython-37.pyc matches /usr/lib/python3.7/json/decoder.py
+# code object from '/usr/lib/python3.7/json/__pycache__/decoder.cpython-37.pyc'
+# /usr/lib/python3.7/json/__pycache__/scanner.cpython-37.pyc matches /usr/lib/python3.7/json/scanner.py
+# code object from '/usr/lib/python3.7/json/__pycache__/scanner.cpython-37.pyc'
+# extension module '_json' loaded from '/usr/lib/python3.7/lib-dynload/_json.cpython-37m-x86_64-linux-gnu.so'
+# extension module '_json' executed from '/usr/lib/python3.7/lib-dynload/_json.cpython-37m-x86_64-linux-gnu.so'
+import '_json' # <_frozen_importlib_external.ExtensionFileLoader object at 0x7fb237ae74d0>
+import 'json.scanner' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ae2f50>
+import 'json.decoder' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237adbbd0>
+# /usr/lib/python3.7/json/__pycache__/encoder.cpython-37.pyc matches /usr/lib/python3.7/json/encoder.py
+# code object from '/usr/lib/python3.7/json/__pycache__/encoder.cpython-37.pyc'
+import 'json.encoder' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ae2c90>
+import 'json' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237adb350>
+import 'pep517.compat' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ad7fd0>
+# /usr/lib/python3.7/importlib/__pycache__/resources.cpython-37.pyc matches /usr/lib/python3.7/importlib/resources.py
+# code object from '/usr/lib/python3.7/importlib/__pycache__/resources.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/pathlib.cpython-37.pyc matches /usr/lib/python3.7/pathlib.py
+# code object from '/usr/lib/python3.7/__pycache__/pathlib.cpython-37.pyc'
+# /usr/lib/python3.7/__pycache__/ntpath.cpython-37.pyc matches /usr/lib/python3.7/ntpath.py
+# code object from '/usr/lib/python3.7/__pycache__/ntpath.cpython-37.pyc'
+import 'ntpath' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237a78710>
+# /usr/lib/python3.7/urllib/__pycache__/__init__.cpython-37.pyc matches /usr/lib/python3.7/urllib/__init__.py
+# code object from '/usr/lib/python3.7/urllib/__pycache__/__init__.cpython-37.pyc'
+import 'urllib' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237a80a90>
+# /usr/lib/python3.7/urllib/__pycache__/parse.cpython-37.pyc matches /usr/lib/python3.7/urllib/parse.py
+# code object from '/usr/lib/python3.7/urllib/__pycache__/parse.cpython-37.pyc'
+import 'urllib.parse' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237a80ad0>
+import 'pathlib' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237a5ca90>
+# /usr/lib/python3.7/__pycache__/typing.cpython-37.pyc matches /usr/lib/python3.7/typing.py
+# code object from '/usr/lib/python3.7/__pycache__/typing.cpython-37.pyc'
+import 'typing' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237a5f410>
+import 'importlib.resources' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237adb210>
+import 'pep517.wrappers' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ac9650>
+import 'pep517.envbuild' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb237ab6d50>
+Found pyproject.toml                                        I-__main__
+Loaded pyproject.toml                                       I-__main__
+Temporary build environment: /tmp/pep517-build-env-_v_uvo7g  I-pep517.envbuild
+# /usr/lib/python3.7/__pycache__/_sysconfigdata_m_linux_x86_64-linux-gnu.cpython-37.pyc matches /usr/lib/python3.7/_sysconfigdata_m_linux_x86_64-linux-gnu.py
+# code object from '/usr/lib/python3.7/__pycache__/_sysconfigdata_m_linux_x86_64-linux-gnu.cpython-37.pyc'
+import '_sysconfigdata_m_linux_x86_64-linux-gnu' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2379dcb10>
+Calling pip to install ['setuptools>=40.6.0', 'wheel']  I-pep517.envbuild
+Collecting setuptools>=40.6.0                        I-pep517.envbuild
+  Using cached setuptools-45.2.0-py3-none-any.whl (584 kB)  I-pep517.envbuild
+Collecting wheel                                     I-pep517.envbuild
+  Using cached wheel-0.34.2-py2.py3-none-any.whl (26 kB)  I-pep517.envbuild
+Installing collected packages: setuptools, wheel     I-pep517.envbuild
+Successfully installed setuptools wheel              I-pep517.envbuild
+Installed static build dependencies                         I-__main__
+running egg_info
+creating implicit_namespace_foo.egg-info
+writing implicit_namespace_foo.egg-info/PKG-INFO
+writing dependency_links to implicit_namespace_foo.egg-info/dependency_links.txt
+writing namespace_packages to implicit_namespace_foo.egg-info/namespace_packages.txt
+writing requirements to implicit_namespace_foo.egg-info/requires.txt
+writing top-level names to implicit_namespace_foo.egg-info/top_level.txt
+writing manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+reading manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.rst'
+writing manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+Got build requires: []                                      I-__main__
+Installed dynamic build dependencies                        I-__main__
+Trying to build sdist in /tmp/tmpz_60xgpr                   I-__main__
+running sdist
+running egg_info
+writing implicit_namespace_foo.egg-info/PKG-INFO
+writing dependency_links to implicit_namespace_foo.egg-info/dependency_links.txt
+writing namespace_packages to implicit_namespace_foo.egg-info/namespace_packages.txt
+writing requirements to implicit_namespace_foo.egg-info/requires.txt
+writing top-level names to implicit_namespace_foo.egg-info/top_level.txt
+reading manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.rst'
+writing manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+running check
+creating implicit_namespace_foo--0.0.1-
+creating implicit_namespace_foo--0.0.1-/implicit_namespace_foo.egg-info
+creating implicit_namespace_foo--0.0.1-/test
+creating implicit_namespace_foo--0.0.1-/test/bar
+copying files to implicit_namespace_foo--0.0.1-...
+copying LICENSE-2.0.txt -> implicit_namespace_foo--0.0.1-
+copying MANIFEST.in -> implicit_namespace_foo--0.0.1-
+copying README.md -> implicit_namespace_foo--0.0.1-
+copying pyproject.toml -> implicit_namespace_foo--0.0.1-
+copying setup.cfg -> implicit_namespace_foo--0.0.1-
+copying implicit_namespace_foo.egg-info/PKG-INFO -> implicit_namespace_foo--0.0.1-/implicit_namespace_foo.egg-info
+copying implicit_namespace_foo.egg-info/SOURCES.txt -> implicit_namespace_foo--0.0.1-/implicit_namespace_foo.egg-info
+copying implicit_namespace_foo.egg-info/dependency_links.txt -> implicit_namespace_foo--0.0.1-/implicit_namespace_foo.egg-info
+copying implicit_namespace_foo.egg-info/namespace_packages.txt -> implicit_namespace_foo--0.0.1-/implicit_namespace_foo.egg-info
+copying implicit_namespace_foo.egg-info/requires.txt -> implicit_namespace_foo--0.0.1-/implicit_namespace_foo.egg-info
+copying implicit_namespace_foo.egg-info/top_level.txt -> implicit_namespace_foo--0.0.1-/implicit_namespace_foo.egg-info
+copying test/__init__.py -> implicit_namespace_foo--0.0.1-/test
+copying test/bar/__init__.py -> implicit_namespace_foo--0.0.1-/test/bar
+copying test/bar/test_pep420_implicit_namespace_package.py -> implicit_namespace_foo--0.0.1-/test/bar
+Writing implicit_namespace_foo--0.0.1-/setup.cfg
+Creating tar archive
+removing 'implicit_namespace_foo--0.0.1-' (and everything under it)
+build_sdist returned 'implicit_namespace_foo--0.0.1-.tar.gz'  I-__main__
+Output file /tmp/tmpz_60xgpr/implicit_namespace_foo--0.0.1-.tar.gz exists  I-__main__
+# /usr/lib/python3.7/__pycache__/gzip.cpython-37.pyc matches /usr/lib/python3.7/gzip.py
+# code object from '/usr/lib/python3.7/__pycache__/gzip.cpython-37.pyc'
+import 'gzip' # <_frozen_importlib_external.SourceFileLoader object at 0x7fb2381a9590>
+Output file is a tar file                                   I-__main__
+Temporary build environment: /tmp/pep517-build-env-2pag99rv  I-pep517.envbuild
+Calling pip to install ['setuptools>=40.6.0', 'wheel']  I-pep517.envbuild
+Collecting setuptools>=40.6.0                        I-pep517.envbuild
+  Using cached setuptools-45.2.0-py3-none-any.whl (584 kB)  I-pep517.envbuild
+Collecting wheel                                     I-pep517.envbuild
+  Using cached wheel-0.34.2-py2.py3-none-any.whl (26 kB)  I-pep517.envbuild
+Installing collected packages: setuptools, wheel     I-pep517.envbuild
+Successfully installed setuptools wheel              I-pep517.envbuild
+Installed static build dependencies                         I-__main__
+running egg_info
+writing implicit_namespace_foo.egg-info/PKG-INFO
+writing dependency_links to implicit_namespace_foo.egg-info/dependency_links.txt
+writing namespace_packages to implicit_namespace_foo.egg-info/namespace_packages.txt
+writing requirements to implicit_namespace_foo.egg-info/requires.txt
+writing top-level names to implicit_namespace_foo.egg-info/top_level.txt
+reading manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.rst'
+writing manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+Got build requires: ['wheel']                               I-__main__
+Calling pip to install ['wheel']                     I-pep517.envbuild
+Collecting wheel                                     I-pep517.envbuild
+  Using cached wheel-0.34.2-py2.py3-none-any.whl (26 kB)  I-pep517.envbuild
+Installing collected packages: wheel                 I-pep517.envbuild
+Successfully installed wheel-0.34.2                  I-pep517.envbuild
+Installed dynamic build dependencies                        I-__main__
+Trying to build wheel in /tmp/tmpsa7w3z2t                   I-__main__
+running bdist_wheel
+running build
+running build_py
+creating build
+creating build/lib
+creating build/lib/test
+copying test/__init__.py -> build/lib/test
+creating build/lib/test/bar
+copying test/bar/test_pep420_implicit_namespace_package.py -> build/lib/test/bar
+copying test/bar/__init__.py -> build/lib/test/bar
+installing to build/bdist.linux-x86_64/wheel
+running install
+running install_lib
+copying test/__init__.py -> build/bdist.linux-x86_64/wheel/test
+copying test/bar/__init__.py -> build/bdist.linux-x86_64/wheel/test/bar
+copying test/bar/test_pep420_implicit_namespace_package.py -> build/bdist.linux-x86_64/wheel/test/bar
+running install_egg_info
+running egg_info
+writing implicit_namespace_foo.egg-info/PKG-INFO
+writing dependency_links to implicit_namespace_foo.egg-info/dependency_links.txt
+writing namespace_packages to implicit_namespace_foo.egg-info/namespace_packages.txt
+writing requirements to implicit_namespace_foo.egg-info/requires.txt
+writing top-level names to implicit_namespace_foo.egg-info/top_level.txt
+reading manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+warning: no files found matching '*.rst'
+writing manifest file 'implicit_namespace_foo.egg-info/SOURCES.txt'
+Copying implicit_namespace_foo.egg-info to build/bdist.linux-x86_64/wheel/implicit_namespace_foo-_0.0.1_-py3.7.egg-info
+Installing build/bdist.linux-x86_64/wheel/implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/implicit_namespace_foo-_0.0.1_.dist-info/WHEEL
+creating '/tmp/tmpsa7w3z2t/tmp7ty5c7mx/implicit_namespace_foo-_0.0.1_-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth'
+adding 'test/__init__.py'
+adding 'test/bar/__init__.py'
+adding 'test/bar/test_pep420_implicit_namespace_package.py'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/LICENSE-2.0.txt'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/METADATA'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/WHEEL'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/namespace_packages.txt'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/top_level.txt'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+build_wheel returned 'implicit_namespace_foo-_0.0.1_-py3-none-any.whl'  I-__main__
+Output file /tmp/tmpsa7w3z2t/implicit_namespace_foo-_0.0.1_-py3-none-any.whl exists  I-__main__
+Output file is a zip file                                   I-__main__
+Checks passed
+# cleanup[3] wiping builtins
+# destroy json.scanner
+# destroy json.decoder
+# destroy json.encoder
+# destroy _json
+# destroy fnmatch
+# destroy _stat
+# destroy abc
+# destroy contextlib
+# destroy functools
+# destroy operator
+# destroy linecache
+# destroy _imp
+# destroy _frozen_importlib_external
+# destroy types
+# destroy importlib.machinery
+# destroy importlib.abc
+# destroy importlib.util
+# destroy ntpath
+# destroy posixpath
+# destroy _sre
+# destroy sre_parse
+# destroy _heapq
+# destroy _thread
+# destroy _string
+# destroy io
+# destroy collections
+# destroy re
+PyThreadState_Clear: warning: thread still has a frame
+PyThreadState_Clear: warning: thread still has a frame
+PyThreadState_Clear: warning: thread still has a frame
+PyThreadState_Clear: warning: thread still has a frame
+PyThreadState_Clear: warning: thread still has a frame
+PyThreadState_Clear: warning: thread still has a frame
+# destroy _frozen_importlib

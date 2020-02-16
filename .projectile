@@ -1,0 +1,7 @@
+-/venv420
+-/venv
+-/venv517
+-/build
+-__pycache__
+-/*.egg-info
+-/.eggs
