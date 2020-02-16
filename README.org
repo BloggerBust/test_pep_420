@@ -14,7 +14,7 @@ Everything beyond this point assumes that you have cloned this repository and ch
   cd test_pep_420
 #+end_src
 
-The repository includes an implicitly namespace package named implicit_namespace_foo. 
+The repository includes an implicitly namespace package named =implicit_namespace_foo=. 
 * What are the issues?
 
 ** PEP 420 Namespace package causes pip commands to raise AttributeError
@@ -138,9 +138,9 @@ No broken requirements found.
 
 ** PEP-420 namespace package has a __file__ attribute
 I wanted to see if the namespace was being created correctly as described in [[https://www.python.org/dev/peps/pep-0420/#differences-between-namespace-packages-and-regular-packages][PEP-420 Differences between namespace packages and regular packages]]. I wrote the following three tests:
-1. test_namespace_has_no_file_attribute
-2. test_namespace_has_no___init___module
-3. test_namespace_has_different_type_of_object_for__loader__
+1. =test_namespace_has_no_file_attribute=
+2. =test_namespace_has_no___init___module=
+3. =test_namespace_has_different_type_of_object_for__loader__=
 
 The first test fails because the namespace package has a =__file__= attribute which violates PEP420.
 
