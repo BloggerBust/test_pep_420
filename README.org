@@ -3,148 +3,18 @@
 #+DESCRIPTION: Exploring issues with implicit namespace
 #+STARTUP: showall
 
-* What is this about?
-I have run into an issue installing packages with implicit namespaces. I would like to explore the issue to better understand what is going wrong. Someone has already created [[https://github.com/pypa/pip/issues/6055][pip issue 6055]], the only difference is that my example uses a PEP 420 implicit namespace.
+* What are the issues?
+PEP-420 [[https://www.python.org/dev/peps/pep-0420/#differences-between-namespace-packages-and-regular-packages][Differences between namespace packages and regular packages]] says that an implicit namespace package should not have a =__file__= attribute. I wrote a test that checks for the presense of the =__file__= attribute and the test fails.
 
-* Prerequisite
-Everything beyond this point assumes that you have cloned this repository and changed directory to the repository root.
+* How to run the tests?
+The repository includes an implicitly namespace package named =implicit_namespace_foo=. Clone the repository.
 #+begin_src sh
   cd ~/dev
   git clone https://github.com/BloggerBust/test_pep_420.git
   cd test_pep_420
 #+end_src
 
-The repository includes an implicitly namespace package named =implicit_namespace_foo=. 
-* What are the issues?
-
-** PEP 420 Namespace package causes pip commands to raise AttributeError
-If I install a namespace package using pip install the installation will appear to have been successful.
-
-#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 
-  rm -rf venv/
-  python -m venv venv
-  source venv/bin/activate
-  pip install -q --upgrade pip
-  pip install .
-#+end_src
-
-#+RESULTS:
-#+BEGIN_EXAMPLE
-Processing /home/dustfinger/dev/test_pep_420
-  Installing build dependencies: started
-  Installing build dependencies: finished with status 'done'
-  Getting requirements to build wheel: started
-  Getting requirements to build wheel: finished with status 'done'
-    Preparing wheel metadata: started
-    Preparing wheel metadata: finished with status 'done'
-Collecting importlib-metadata; python_version < "3.8"
-  Using cached importlib_metadata-1.5.0-py2.py3-none-any.whl (30 kB)
-Collecting zipp>=0.5
-  Using cached zipp-2.2.0-py36-none-any.whl (4.6 kB)
-Building wheels for collected packages: implicit-namespace-foo
-  Building wheel for implicit-namespace-foo (PEP 517): started
-  Building wheel for implicit-namespace-foo (PEP 517): finished with status 'done'
-  Created wheel for implicit-namespace-foo: filename=implicit_namespace_foo-_0.0.1_-py3-none-any.whl size=7914 sha256=e12d997d800e6cbb371208eb725d348757a3caed714da7f7f9eecc391fcbfe28
-  Stored in directory: /tmp/pip-ephem-wheel-cache-fbdg1dsg/wheels/a1/bc/a2/69bb6d6d62c3e25ab139a0e981c28ea2a0716b4216ee00485a
-Successfully built implicit-namespace-foo
-Installing collected packages: zipp, importlib-metadata, implicit-namespace-foo
-Successfully installed implicit-namespace-foo--0.0.1- importlib-metadata-1.5.0 zipp-2.2.0
-#+END_EXAMPLE
-
-However, running any pip command in the venv will now result in an AttributeError.
-#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
-  pip freeze
-#+end_src
-
-#+RESULTS:
-#+begin_example
-Error processing line 1 of /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth:
-
-  Traceback (most recent call last):
-    File "/usr/lib/python-exec/python3.7/../../../lib/python3.7/site.py", line 168, in addpackage
-      exec(line)
-    File "<string>", line 1, in <module>
-    File "<frozen importlib._bootstrap>", line 580, in module_from_spec
-  AttributeError: 'NoneType' object has no attribute 'loader'
-
-Remainder of file ignored
-Error processing line 1 of /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth:
-
-  Traceback (most recent call last):
-    File "/usr/lib/python-exec/python3.7/../../../lib/python3.7/site.py", line 168, in addpackage
-      exec(line)
-    File "<string>", line 1, in <module>
-    File "<frozen importlib._bootstrap>", line 580, in module_from_spec
-  AttributeError: 'NoneType' object has no attribute 'loader'
-
-Remainder of file ignored
-implicit-namespace-foo===-0.0.1-
-importlib-metadata==1.5.0
-zipp==2.2.0
-#+end_example
-
-The same result happens if I first build a wheel with pep517.
-#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
-  rm -rf venv/
-  rm -rf build/
-  rm -rf dist/
-  rm -rf implicit_namespace_foo.egg-info
-  python -m venv venv
-  source venv/bin/activate
-  pip install -q --upgrade pip pep517
-  python -v -m pep517.check . > pep517check.log 2>&1
-  python -v -m pep517.build . > pep517build.log 2>&1
-  pip install dist/implicit_namespace_foo-_0.0.1_-py3-none-any.whl
-#+end_src
-
-#+RESULTS:
-#+begin_example
-Processing ./dist/implicit_namespace_foo-_0.0.1_-py3-none-any.whl
-Requirement already satisfied: importlib-metadata; python_version < "3.8" in ./venv/lib/python3.7/site-packages (from implicit-namespace-foo==-0.0.1-) (1.5.0)
-Requirement already satisfied: zipp>=0.5 in ./venv/lib/python3.7/site-packages (from importlib-metadata; python_version < "3.8"->implicit-namespace-foo==-0.0.1-) (2.2.0)
-Installing collected packages: implicit-namespace-foo
-Successfully installed implicit-namespace-foo--0.0.1-
-#+end_example
-
-Here is the output for [[file:pep517check.log][pep517.check]] and [[file:pep517build.log][pep517.build]]. The installation succeeds, but running pip in the venv causes the same AttributeError
-#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
-pip check
-#+end_src
-
-#+RESULTS:
-#+begin_example
-Error processing line 1 of /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth:
-
-  Traceback (most recent call last):
-    File "/usr/lib/python-exec/python3.7/../../../lib/python3.7/site.py", line 168, in addpackage
-      exec(line)
-    File "<string>", line 1, in <module>
-    File "<frozen importlib._bootstrap>", line 580, in module_from_spec
-  AttributeError: 'NoneType' object has no attribute 'loader'
-
-Remainder of file ignored
-Error processing line 1 of /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth:
-
-  Traceback (most recent call last):
-    File "/usr/lib/python-exec/python3.7/../../../lib/python3.7/site.py", line 168, in addpackage
-      exec(line)
-    File "<string>", line 1, in <module>
-    File "<frozen importlib._bootstrap>", line 580, in module_from_spec
-  AttributeError: 'NoneType' object has no attribute 'loader'
-
-Remainder of file ignored
-No broken requirements found.
-#+end_example
-
-** PEP-420 namespace package has a __file__ attribute
-I wanted to see if the namespace was being created correctly as described in [[https://www.python.org/dev/peps/pep-0420/#differences-between-namespace-packages-and-regular-packages][PEP-420 Differences between namespace packages and regular packages]]. I wrote the following three tests:
-1. =test_namespace_has_no_file_attribute=
-2. =test_namespace_has_no___init___module=
-3. =test_namespace_has_different_type_of_object_for__loader__=
-
-The first test fails because the namespace package has a =__file__= attribute which violates PEP420.
-
-* How to run the tests?
+Then run the tests
 #+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
   rm -rf venv/
   python -m venv venv
