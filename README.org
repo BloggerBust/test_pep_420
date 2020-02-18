@@ -4,7 +4,7 @@
 #+STARTUP: showall
 
 * What are the issues?
-PEP-420 [[https://www.python.org/dev/peps/pep-0420/#differences-between-namespace-packages-and-regular-packages][Differences between namespace packages and regular packages]] says that an implicit namespace package should not have a =__file__= attribute. I wrote a test that checks for the presense of the =__file__= attribute and the test fails.
+PEP-420 [[https://www.python.org/dev/peps/pep-0420/#differences-between-namespace-packages-and-regular-packages][Differences between namespace packages and regular packages]] says that an implicit namespace package should not have a =__file__= attribute. I wrote a test that checks for the presence of the =__file__= attribute and the test fails.
 
 * How to run the tests?
 The repository includes an implicitly namespace package named =implicit_namespace_foo=. Clone the repository.
@@ -14,16 +14,17 @@ The repository includes an implicitly namespace package named =implicit_namespac
   cd test_pep_420
 #+end_src
 
-Then run the tests
+Then run the tests.
 #+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
   rm -rf venv/
   python -m venv venv
   source venv/bin/activate
-  pip install -q --upgrade pip
+  pip install -q --upgrade pip setuptools
   python -m unittest discover
 #+end_src
 
 #+RESULTS:
+
 #+begin_example
 ..F
 ======================================================================
@@ -39,3 +40,191 @@ Ran 3 tests in 0.000s
 
 FAILED (failures=1)
 #+end_example
+
+* How to build a wheel & source dist
+The project's [[file:setup.cfg][setup configuration]] follows [[https://www.python.org/dev/peps/pep-0517/][PEP-517]] and its [[file:pyproject.toml][build system configuration]] follows [[https://www.python.org/dev/peps/pep-0518/][PEP-518]] at the time of writing. To build a wheel and source distribution you can use [[https://pypi.org/project/pep517/][pep517]] package.
+
+#+begin_src sh :results output scalar silent :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
+pip install -q pep517
+python -m pep517.build .
+#+end_src
+
+The wheel and source distribution will be placed in a directory named dist by default.
+#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
+ls dist/
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+implicit_namespace_foo-_0.0.1_-py3-none-any.whl
+implicit_namespace_foo--0.0.1-.tar.gz
+#+end_example
+
+Help documentation is available at the command-line.
+#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
+python -m pep517.build --help
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+usage: build.py [-h] [--binary] [--source] [--out-dir OUT_DIR] source_dir
+
+positional arguments:
+  source_dir            A directory containing pyproject.toml
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --binary, -b
+  --source, -s
+  --out-dir OUT_DIR, -o OUT_DIR
+                        Destination in which to save the builds relative to
+                        source dir
+#+end_example
+
+* How to install the package
+Installing the package is straight forward.
+
+To install using the wheel
+#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
+pip install dist/implicit_namespace_foo-_0.0.1_-py3-none-any.whl
+echo
+echo "==================="
+echo "Installed packages:"
+echo "==================="
+pip freeze
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+Processing ./dist/implicit_namespace_foo-_0.0.1_-py3-none-any.whl
+Installing collected packages: implicit-namespace-foo
+Successfully installed implicit-namespace-foo--0.0.1-
+
+===================
+Installed packages:
+===================
+implicit-namespace-foo===-0.0.1-
+importlib-metadata==1.5.0
+pep517==0.8.1
+toml==0.10.0
+zipp==3.0.0
+#+end_example
+
+To install using the source distribution
+#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
+pip install -q dist/implicit_namespace_foo--0.0.1-.tar.gz
+echo
+echo "==================="
+echo "Installed packages:"
+echo "==================="
+pip freeze
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+
+===================
+Installed packages:
+===================
+implicit-namespace-foo===-0.0.1-
+importlib-metadata==1.5.0
+pep517==0.8.1
+toml==0.10.0
+zipp==3.0.0
+#+end_example
+
+Or you can simply install from the local source tree.
+#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
+pip install -q .
+echo
+echo "==================="
+echo "Installed packages:"
+echo "==================="
+pip freeze
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+
+===================
+Installed packages:
+===================
+implicit-namespace-foo===-0.0.1-
+importlib-metadata==1.5.0
+pep517==0.8.1
+toml==0.10.0
+zipp==3.0.0
+#+end_example
+
+* What to watch out for
+When building a namespace package it is important to use the =find_namespace= directive in  [[file:setup.cfg][setup.cfg]].
+#+begin_example
+[options]
+namespace_packages =
+    implicit_namespace_foo
+packages = find_namespace:
+#+end_example
+
+If instead the setup.cfg used the find directive like this:
+#+begin_example
+[options]
+namespace_packages =
+    implicit_namespace_foo
+packages = find:
+#+end_example
+
+Then the build will treat the package as a standard package. When it finds that the package is empty it will not recursively search the sub packages. The project will still build and install without errors.
+#+begin_src sh :results output scalar replace :shebang "#!/bin/bash" :dir ~/dev/test_pep_420 :wrap example
+pip install -q pep517
+python -m pep517.build .
+pip install dist/implicit_namespace_foo-_0.0.1_-py3-none-any.whl
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+... above output omitted for brevity
+running install_scripts
+creating build/bdist.linux-x86_64/wheel/implicit_namespace_foo-_0.0.1_.dist-info/WHEEL
+creating '/tmp/tmpxv0wm9jr/tmphsnicn86/implicit_namespace_foo-_0.0.1_-py3-none-any.whl' and adding 'build/bdist.linux-x86_64/wheel' to it
+adding 'implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/LICENSE-2.0.txt'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/METADATA'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/WHEEL'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/namespace_packages.txt'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/top_level.txt'
+adding 'implicit_namespace_foo-_0.0.1_.dist-info/RECORD'
+removing build/bdist.linux-x86_64/wheel
+#+end_example
+
+However; none of the namespace packages sub packages were added to the wheel. Not only that, but calls to pip will report an error.
+#+begin_src sh :output results scalar replace :shebang "#!/bin/bash" :wrap example
+pip freeze
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+Error processing line 1 of /home/dustfinger/dev/test_pep_420/venv/lib/python3.7/site-packages/implicit_namespace_foo-_0.0.1_-py3.7-nspkg.pth:
+
+  Traceback (most recent call last):
+    File "/usr/lib/python-exec/python3.7/../../../lib/python3.7/site.py", line 168, in addpackage
+      exec(line)
+    File "<string>", line 1, in <module>
+    File "<frozen importlib._bootstrap>", line 580, in module_from_spec
+  AttributeError: 'NoneType' object has no attribute 'loader'
+
+Remainder of file ignored
+implicit-namespace-foo===-0.0.1-
+importlib-metadata==1.5.0
+pep517==0.8.1
+toml==0.10.0
+zipp==3.0.0
+#+end_example
+
+That is the same error reported in [[https://github.com/pypa/pip/issues/6055][pip issue #6055]].
