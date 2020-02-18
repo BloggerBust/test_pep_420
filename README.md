@@ -1,22 +1,24 @@
 
 # Table of Contents
 
-1.  [What are the issues?](#orga718151)
-2.  [How to run the tests?](#orga1f14bb)
-3.  [How to build a wheel & source dist](#orge35e059)
-4.  [How to install the package](#org38875a1)
-5.  [What to watch out for](#org80986e9)
+1.  [What are the issues?](#org1d8d9d6)
+2.  [How to run the tests?](#org65432fb)
+3.  [How to build a wheel & source dist](#orgf72f6ff)
+4.  [How to install the package](#org163fb90)
+5.  [What to watch out for](#orge00bd6b)
+    1.  [Use `find_namespace` directive for namespace packages](#orgc77e38f)
+    2.  [A fully declarative setup does not yet support editable install](#org9ba8d92)
 
 
 
-<a id="orga718151"></a>
+<a id="org1d8d9d6"></a>
 
 # What are the issues?
 
 PEP-420 [Differences between namespace packages and regular packages](https://www.python.org/dev/peps/pep-0420/#differences-between-namespace-packages-and-regular-packages) says that an implicit namespace package should not have a `__file__` attribute. I wrote a test that checks for the presence of the `__file__` attribute and the test fails.
 
 
-<a id="orga1f14bb"></a>
+<a id="org65432fb"></a>
 
 # How to run the tests?
 
@@ -49,7 +51,7 @@ Then run the tests.
     FAILED (failures=1)
 
 
-<a id="orge35e059"></a>
+<a id="orgf72f6ff"></a>
 
 # How to build a wheel & source dist
 
@@ -83,7 +85,7 @@ Help documentation is available at the command-line.
                             source dir
 
 
-<a id="org38875a1"></a>
+<a id="org163fb90"></a>
 
 # How to install the package
 
@@ -150,9 +152,14 @@ Or you can simply install from the local source tree.
     zipp==3.0.0
 
 
-<a id="org80986e9"></a>
+<a id="orge00bd6b"></a>
 
 # What to watch out for
+
+
+<a id="orgc77e38f"></a>
+
+## Use `find_namespace` directive for namespace packages
 
 When building a namespace package it is important to use the `find_namespace` directive in  [setup.cfg](setup.cfg).
 
@@ -208,4 +215,14 @@ However; none of the namespace packages sub packages were added to the wheel. No
     zipp==3.0.0
 
 That is the same error reported in [pip issue #6055](https://github.com/pypa/pip/issues/6055).
+
+
+<a id="org9ba8d92"></a>
+
+## A fully declarative setup does not yet support editable install
+
+    pip install -e .
+
+    ERROR: File "setup.py" not found. Directory cannot be installed in editable mode: /home/dustfinger/dev/test_pep_420
+    (A "pyproject.toml" file was found, but editable mode currently requires a setup.py based build.)
 

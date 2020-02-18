@@ -162,6 +162,8 @@ zipp==3.0.0
 #+end_example
 
 * What to watch out for
+
+** Use =find_namespace= directive for namespace packages
 When building a namespace package it is important to use the =find_namespace= directive in  [[file:setup.cfg][setup.cfg]].
 #+begin_example
 [options]
@@ -228,3 +230,15 @@ zipp==3.0.0
 #+end_example
 
 That is the same error reported in [[https://github.com/pypa/pip/issues/6055][pip issue #6055]].
+
+** A fully declarative setup does not yet support editable install
+#+begin_src sh :results output scalar :shebang "#!/bin/bash" :wrap example
+pip install -e .
+#+end_src
+
+#+RESULTS:
+
+#+begin_example
+ERROR: File "setup.py" not found. Directory cannot be installed in editable mode: /home/dustfinger/dev/test_pep_420
+(A "pyproject.toml" file was found, but editable mode currently requires a setup.py based build.)
+#+end_example
