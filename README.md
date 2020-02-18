@@ -1,28 +1,28 @@
 
 # Table of Contents
 
-1.  [What are the issues?](#org1d8d9d6)
-2.  [How to run the tests?](#org65432fb)
-3.  [How to build a wheel & source dist](#orgf72f6ff)
-4.  [How to install the package](#org163fb90)
-5.  [What to watch out for](#orge00bd6b)
-    1.  [Use `find_namespace` directive for namespace packages](#orgc77e38f)
-    2.  [A fully declarative setup does not yet support editable install](#org9ba8d92)
+1.  [What are the issues?](#org63eac54)
+2.  [How to run the tests?](#org84bfc72)
+3.  [How to build a wheel & source dist](#org87a7f32)
+4.  [How to install the package](#orga8d28b5)
+5.  [What to watch out for](#org6d2598e)
+    1.  [Use `find_namespace` directive for namespace packages](#org1e4905c)
+    2.  [A fully declarative setup does not yet support editable install](#org1768d98)
 
 
 
-<a id="org1d8d9d6"></a>
+<a id="org63eac54"></a>
 
 # What are the issues?
 
 PEP-420 [Differences between namespace packages and regular packages](https://www.python.org/dev/peps/pep-0420/#differences-between-namespace-packages-and-regular-packages) says that an implicit namespace package should not have a `__file__` attribute. I wrote a test that checks for the presence of the `__file__` attribute and the test fails.
 
 
-<a id="org65432fb"></a>
+<a id="org84bfc72"></a>
 
 # How to run the tests?
 
-The repository includes an implicitly namespace package named `implicit_namespace_foo`. Clone the repository.
+The repository includes an implicit namespace package named `implicit_namespace_foo`. Clone the repository.
 
     cd ~/dev
     git clone https://github.com/BloggerBust/test_pep_420.git
@@ -51,7 +51,7 @@ Then run the tests.
     FAILED (failures=1)
 
 
-<a id="orgf72f6ff"></a>
+<a id="org87a7f32"></a>
 
 # How to build a wheel & source dist
 
@@ -85,13 +85,13 @@ Help documentation is available at the command-line.
                             source dir
 
 
-<a id="org163fb90"></a>
+<a id="orga8d28b5"></a>
 
 # How to install the package
 
 Installing the package is straight forward.
 
-To install using the wheel
+To install using the wheel:
 
     pip install dist/implicit_namespace_foo-_0.0.1_-py3-none-any.whl
     echo
@@ -113,7 +113,7 @@ To install using the wheel
     toml==0.10.0
     zipp==3.0.0
 
-To install using the source distribution
+To install using the source distribution:
 
     pip install -q dist/implicit_namespace_foo--0.0.1-.tar.gz
     echo
@@ -132,7 +132,7 @@ To install using the source distribution
     toml==0.10.0
     zipp==3.0.0
 
-Or you can simply install from the local source tree.
+Or you can simply install from the local source tree:
 
     pip install -q .
     echo
@@ -152,12 +152,12 @@ Or you can simply install from the local source tree.
     zipp==3.0.0
 
 
-<a id="orge00bd6b"></a>
+<a id="org6d2598e"></a>
 
 # What to watch out for
 
 
-<a id="orgc77e38f"></a>
+<a id="org1e4905c"></a>
 
 ## Use `find_namespace` directive for namespace packages
 
@@ -168,7 +168,7 @@ When building a namespace package it is important to use the `find_namespace` di
         implicit_namespace_foo
     packages = find_namespace:
 
-If instead the setup.cfg used the find directive like this:
+If instead the [setup.cfg](setup.cfg) used the find directive like this:
 
     [options]
     namespace_packages =
@@ -217,7 +217,7 @@ However; none of the namespace packages sub packages were added to the wheel. No
 That is the same error reported in [pip issue #6055](https://github.com/pypa/pip/issues/6055).
 
 
-<a id="org9ba8d92"></a>
+<a id="org1768d98"></a>
 
 ## A fully declarative setup does not yet support editable install
 
